@@ -1,0 +1,21 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta33.7.dtd" >
+   <PATCH nodename="C:\vvvv\projects\KinectStream\_root.v4p" systemname="_root" filename="C:\vvvv\projects\KinectStream\_root.v4p">
+   <BOUNDS type="Window" left="15465" top="6300" width="9000" height="6000">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="33.7.0">
+   </PACK>
+   <NODE systemname="SelectRegion (TextureFX dx11)" filename="SelectRegion (TextureFX dx11).v4p" nodename="SelectRegion (TextureFX dx11)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2025" top="2445" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="ControlPoints" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="PickPointsInTexture" filename="PickPointsInTexture.v4p" nodename="PickPointsInTexture.v4p" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="1575" top="1680" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="1" dstpinname="ControlPoints">
+   </LINK>
+   </PATCH>
